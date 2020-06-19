@@ -18,8 +18,8 @@ CREATE TABLE [dbo].[LoginPatient] (
 CREATE TABLE [dbo].[Visits] (
 	[Id]				  INT            IDENTITY (1, 1) NOT NULL,
     [Specialization]	  NVARCHAR (50) NOT NULL,
-    [VisitDate]           DATE NULL,
-	[VisitTime]			  TIME NULL,
+    [Date]           DATE NULL,
+	[Time]			  TIME NULL,
     [PrivateNFZ]		  NVARCHAR (10) NULL,
     [PatientId]			  INT NOT NULL,
 	[DoctorId]			  INT NOT NULL,
